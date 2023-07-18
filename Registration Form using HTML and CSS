@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<title>
+  Registeration form using HTML and CSS
+</title>
+ 
+<style>
+body{
+      background-color: #cceeff;
+       text-align: center;
+}
+form {
+            background-color: #ffffe6;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+.form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+.form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+  <h1> Registration Form </h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+        
+        <div class="form-control">
+            <label for="Phone number" id="label-Phone number">
+                Phone number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="number"
+                   id="Phone number"
+                   placeholder="Enter your Phone number" />
+        </div>
+      
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+               <option value="Select">Select </option>
+               
+               <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+ 
+ <div class="form-control">
+            <label for="Degree" id="label-Degree">
+                Enter your degree
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="Degree" id="Degree">
+        
+
+          </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+       <div class="form-control">
+            <label for="Workshop" id="label-Workshop">
+                Select the workshop you are interested in 
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="Workshop" id="Workshop">
+            <option value="Select">Select</option>
+              <option value="Web desiging with HTML and CSS">Web desiging with HTML and CSS </option>
+              <option value="Python">Python</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Machine learning">Machine learning
+                </option>
+                <option value="SQL">SQL</option>
+            </select>
+        </div>
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
